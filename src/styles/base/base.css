@@ -1,0 +1,13 @@
+body {
+    background-color: var(--color-primary);
+}
+
+button {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+img {
+    object-fit: cover;
+}

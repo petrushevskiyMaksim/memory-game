@@ -1,0 +1,12 @@
+.button {
+    padding: 6px 12px;
+    font-weight: 700;
+    color: var(--color-accent);
+    background-color: var(--color-secondary);
+    border-radius: var(--radius-10px);
+    cursor: pointer;
+}
+
+.leaderboard-btn {
+    margin-left: auto;
+}
