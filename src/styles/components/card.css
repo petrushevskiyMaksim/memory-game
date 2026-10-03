@@ -39,5 +39,10 @@
 }
 
 .card__face--back {
-    background: var(--color-accent);
+    background-color: var(--color-accent);
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: var(--color-accent-hover);
+    }
 }

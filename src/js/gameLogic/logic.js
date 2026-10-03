@@ -2,6 +2,8 @@ let firstCard = null;
 let isMatched = false;
 let matchedPairs = 0;
 let lockBoard = false;
+let totalSteps = 0;
+
 const TOTAL_PAIRS = 8;
 
 export const logic = (board) => {
@@ -10,8 +12,8 @@ export const logic = (board) => {
         if (!card) return;
         if (lockBoard) return;
         if (card === firstCard) return;
-        if (card.classList.contains('.is-matched')) return;
-        if (card.classList.contains('.is-flipped')) return;
+        if (card.classList.contains('is-matched')) return;
+        if (card.classList.contains('is-flipped')) return;
 
         flippedCard(card);
 
@@ -25,12 +27,19 @@ export const logic = (board) => {
 };
 
 const checkMatched = (secondCard) => {
-    const isMatch = firstCard.dataset.id === secondCard.dataset.id;
+    const steps = document.querySelector('.steps-num');
+    const pairs = document.querySelector('.pairs-num');
+    steps.textContent = totalSteps;
+    pairs.textContent = matchedPairs;
 
-    if (isMatch) {
+    isMatched = firstCard.dataset.id === secondCard.dataset.id;
+
+    if (steps) steps.textContent = ++totalSteps;
+
+    if (isMatched) {
         firstCard.classList.add('is-matched');
         secondCard.classList.add('is-matched');
-        matchedPairs++;
+        pairs.textContent = ++matchedPairs;
 
         firstCard = null;
 
