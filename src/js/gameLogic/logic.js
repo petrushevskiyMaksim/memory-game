@@ -1,3 +1,5 @@
+import { modalWindow } from '../components/modal';
+
 let firstCard = null;
 let isMatched = false;
 let matchedPairs = 0;
@@ -29,8 +31,6 @@ export const logic = (board) => {
 const checkMatched = (secondCard) => {
     const steps = document.querySelector('.steps-num');
     const pairs = document.querySelector('.pairs-num');
-    steps.textContent = totalSteps;
-    pairs.textContent = matchedPairs;
 
     isMatched = firstCard.dataset.id === secondCard.dataset.id;
 
@@ -44,7 +44,7 @@ const checkMatched = (secondCard) => {
         firstCard = null;
 
         if (matchedPairs === TOTAL_PAIRS) {
-            console.log('FINISH GAME');
+            modalWindow('win');
         }
     } else {
         lockBoard = true;

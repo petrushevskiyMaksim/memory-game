@@ -1,5 +1,8 @@
 import { button } from '../components/button';
+import { modalWindow } from '../components/modal';
 import { renderScore } from '../components/score';
+
+const body = document.querySelector('body');
 
 export const header = () => {
     const header = document.createElement('header');
@@ -10,9 +13,11 @@ export const header = () => {
     const leaderboardBtn = button('Leaderboard');
     leaderboardBtn.classList.add('leaderboard-btn');
 
-    header.append(newGameBtn);
-    header.append(renderScore());
-    header.append(leaderboardBtn);
+    leaderboardBtn.addEventListener('click', () => {
+        body.append(modalWindow('leaderboard'));
+    });
+
+    header.append(newGameBtn, renderScore(), leaderboardBtn);
 
     return header;
 };
