@@ -1,0 +1,19 @@
+.modal {
+    max-width: 600px;
+    max-height: 400px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-10px);
+    background-color: rgb(200, 130, 39);
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-overlay);
+}

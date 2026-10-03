@@ -1,0 +1,13 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+@import './abstacts/variables.css';
+
+@import 'base/base.css';
+
+@import 'layout/header.css';
+@import 'layout/gameBoard.css';
+
+@import 'components/button.css';
+@import 'components/card.css';
+@import 'components/score.css';
+@import 'components/modal.css';
