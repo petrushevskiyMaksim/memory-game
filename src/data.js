@@ -1,11 +1,11 @@
-import img0 from '../assets/image/plants/5332626932702585471.jpg';
-import img1 from '../assets/image/plants/5332626932702585472.jpg';
-import img2 from '../assets/image/plants/5332626932702585473.jpg';
-import img3 from '../assets/image/plants/5332626932702585477.jpg';
-import img4 from '../assets/image/plants/5332626932702585478.jpg';
-import img5 from '../assets/image/plants/5332626932702585480.jpg';
-import img6 from '../assets/image/plants/5332626932702585481.jpg';
-import img7 from '../assets/image/plants/HD_Repeater.webp';
+import img0 from './assets/image/plants/5332626932702585471.jpg';
+import img1 from './assets/image/plants/5332626932702585472.jpg';
+import img2 from './assets/image/plants/5332626932702585473.jpg';
+import img3 from './assets/image/plants/5332626932702585477.jpg';
+import img4 from './assets/image/plants/5332626932702585478.jpg';
+import img5 from './assets/image/plants/5332626932702585480.jpg';
+import img6 from './assets/image/plants/5332626932702585481.jpg';
+import img7 from './assets/image/plants/HD_Repeater.webp';
 
 export const data = [
     {
